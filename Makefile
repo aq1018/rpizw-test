@@ -8,7 +8,7 @@ clean:
 	cross clean
 
 deploy: build
-	scp target/arm-unknown-linux-gnueabihf/debug/servo pi@pi0w:
+	scp target/arm-unknown-linux-gnueabihf/debug/car pi@pi0w:
 
 run: deploy
-	ssh pi@pi0w ./servo
+	ssh pi@pi0w ./car
